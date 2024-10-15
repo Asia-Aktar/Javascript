@@ -1,0 +1,27 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{
+    ---text-color: rgb(255, 162, 23);
+    ---bg-color:rgb(255, 255, 255);
+    ---color:#171717;
+
+
+}
+body{
+    font-family: "Nunito", sans-serif;
+    /* overflow: hidden; */
+    box-sizing: border-box;
+}
+
+
+ li a:hover{
+color: var(---text-color);
+}
+.icon-2:hover{
+    color: var(---text-color);
+}
+.hero-section img{ 
+    width: 100%;
+
+}

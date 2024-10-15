@@ -1,0 +1,312 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+
+}
+body{
+    /* text-align: center; */
+    /* background-color: #f7f7f7; */
+    /* color: #000; */
+    /* min-width: 100vh; */
+    /* max-width: 1270px; */
+    font-family: "Roboto Mono", monospace;
+}
+header{
+    text-align: center;
+    background-color: #f7f7f7;
+    color: #000;
+    min-width: 100vh;
+    padding: 10px 0;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.2);
+
+}
+
+ .container{
+/* max-width: 1270px; */
+margin: auto;
+ }
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:30px;
+    padding-right:30px;
+
+}
+#nav ul{
+    display: flex;
+}
+#nav ul{
+list-style: none;
+}
+
+#nav ul li a{
+    text-decoration: none;
+    margin-inline: 20px ;
+    color: blue;
+    font-size: 25px;
+    
+    
+}
+#nav ul li a:hover{
+    color: crimson;
+    cursor: pointer;
+    border-bottom: 2px solid white;
+}
+.logo img{
+    width: 200px;
+}
+.hamburger{
+    font-size:30px;
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+.mobile-menu {
+    list-style: none;
+    background-color: wheat;
+    /* padding:1rem; */
+    position: fixed;
+    width:50%;
+    height:100%;
+    top: 0;
+    transition: all 0.6s ease-in;
+    left: -100%;
+}
+
+
+.mobile-menu nav img{
+width:300px;
+display: flex;
+ left:0;
+/* margin: auto; */
+}
+.mobile-menu nav ul a{
+    display: flex;
+    /* padding-left: 100px; */
+}
+.mobile-menu ul a{
+text-decoration: none;
+color: #000;
+display: flex;
+margin-inline:20px;
+font-size:30px;
+padding: 15px;
+font-size: 400;
+}
+
+.close{
+    display: none;
+}
+
+.modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:80px;
+    /* margin-bottom: 200px; */
+
+}
+.modal h1{
+    font-size: 2rem;
+}
+.modal button{
+ padding: 1.2rem 2rem;
+ font-size: 1.9rem;
+    margin-top: 3rem;
+    background-color: aqua;
+    color: #000;
+}
+
+.model{
+    position: fixed;
+    top: 0;
+    left: 0;
+   min-height:100vh;
+    width:100%;
+    background-color: rgba(45, 47, 44, 0.664);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+display: none;
+}
+.model .model-contant{
+    padding:1.8rem;
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+    margin: 3rem;
+    width:40rem;
+    /* height:50rem; */
+}
+.model.model-contant{
+    display: inline-block;
+}
+.model img{
+    height: 17rem;
+}
+.icon{
+    position: absolute;
+    top:1rem;
+    right: 1.5rem;
+    cursor: pointer;
+    color: #444;
+    font-size: 2rem;
+}
+.icon:hover{
+    transform: rotate(300deg);
+}
+.model h3{
+    color: #444;
+    padding:0.1rem 0;
+    font-size: 2rem;
+}
+.model p{
+    font-size:17px;
+    line-height:2 ;
+    padding: 0.5rem 0;
+    color: #777;
+}
+.price{
+    padding: 0.6rem 0 ;
+    font-size: 2.3rem;
+    color: #27ae60;
+}
+.buttons{
+    display: flex;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    margin-top:0.2rem;
+}
+.buttons a{
+    flex: 1 1 10rem;
+    padding-left: 10px;
+padding: 0.5rem;
+font-size:1.4rem ;
+color: #444;
+border: 0.1rem solid #444;
+text-decoration: none;
+}
+ .buy:hover{
+    background-color: #1f3f5b;
+color: #fff;
+}
+.cart:hover{
+    background:#1f3f5b ;
+    color: #fff;
+}
+
+.accordion-container{
+    padding-top: 3rem;
+}
+.accordion-container{
+    max-width:600px ;
+    height: 100vh;
+    margin: auto;
+    
+}
+.accordion-contant{
+   padding: 1rem; 
+}
+.accordion-heading{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+    margin: auto;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+.accordion-heading:hover{
+    background-color: antiquewhite;
+}
+.accordion-heading{
+    background-color:chartreuse;
+    padding: 20px;
+    height: 90px;
+}
+.accordion-heading h2{
+    color: blue;
+    
+}
+
+.accordion-contant{
+    background-color: aqua;
+    /* display: none; */
+    padding: 10px;
+}
+.accordion.active.accordion-bod{
+    display: block;
+}
+
+
+  
+
+@media (max-width:995px){
+
+    #nav ul li a{
+        display: none;
+    }
+    #nav .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .mobile-menu{
+        display: block;
+    }
+
+.modal h1{
+text-align: center;
+}
+.model img{
+    height: 10rem;
+}
+.model h3{
+    padding:0.1rem 0;
+    font-size:20px;
+}
+.model p{
+    font-size:13px;
+    line-height:2;
+    padding: 0.2rem 0;
+}
+.price{
+    padding: 2px;
+    font-size: 18px;
+ }
+
+ .buttons a{
+ padding:3px;
+ font-size:1rem ;
+ 
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.6rem;
+    /* margin-top:0.2rem; */
+}
+}
+@media (max-width:600px){
+    .modal{
+        margin-left:62px;
+    }
+    .modal h1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+.accordion-container{
+margin-left: 20px;
+margin-right: 20;
+
+}
+}
