@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Froms</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="w-[1100px] mx-auto">
+    <section  class="container flex flex-col  bg-stone-300  mx-auto border-blue-900  border-4	rounded h-[800px] mt-10 pl-8 pr-8 max-w-[800px] 	shadow-[0px_0px_8px_2px]">
+    <div class="text">
+<h1 class=" font-bold leading-3	 py-10 px-6	text-[35px] text-indigo-700">Restaurant Reservation From</h1>
+    </div>
+<form  action="https://formspree.io/f/mldeezjo"
+method="POST">
+    <div class=" flex pb-8 text-[20px] text-indigo-700">
+    <label" for="name ">Name</label>
+    <div class="flex gap-10 ">
+<input id="name" name="your_name" required type="text" placeholder="First" class="w-[350px] h-12 pl-5 text-sm	">
+<input id="name "  required type="text" placeholder="Last" class="w-[350px] h-12 pl-5">
+</div>
+</div>
+<div class="flex gap-10 pb-8 text-[20px] text-indigo-700">
+    <div >
+    <label  for="email">Email</label> 
+    <input id="email" required type="text" placeholder="" class="w-[350px] h-10" >
+    </div>
+    <div >
+    <label for="phone">phone</label>
+    <input id="phone" required type="text" placeholder="" class="w-[350px] h-10 " >
+    </div>
+    
+</div>
+
+<div class="flex flex-clo gap-10 pb-8 text-[20px] text-indigo-700">
+    <div>
+    <label" for="date">Reservation Date</label>
+<input id="date" type="text" placeholder="MM/DD/YEAR             
+                  📅" class="w-[350px] h-12 pl-5" required>
+</div>
+<div class="pb-8">
+<label" for="time">Reservation Time</label>
+<input id="time" type="text" placeholder="HH:MM.AM" class="w-[350px] h-12  pl-5  ">
+</div>
+</div>
+<div class="pb-8 text-[20px] text-indigo-700">
+    <label for="date">How many person will you be with?</label>
+    <input class="w-[740px] h-[50px]" id="date" type="text" placeholder="" required>
+</div>
+<div class="fiex flex-col  text-[20px] text-indigo-900">
+    <label" for="date">Nots</label>
+    <input class="w-[740px] h-[90px]" id="date  type="text" placeholder="" required>
+</div>
+<div class="btn">
+<!-- <button">SEND</button> -->
+ <input type="submit" value="SEND">
+</div>
+</form>
+</div>
+</section>
+</body>
+</html>
